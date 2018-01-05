@@ -31,9 +31,11 @@ public class Document {
 
 	public void setList(ArrayList<String> list) {
 		this.list = list;
+		/*
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println("Line :"+ i +" Is -->" + list.get(i).toString()+ "\n");
 		}
+		*/
 	}
 
 }
