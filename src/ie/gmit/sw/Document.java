@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Document {
 	private String DocumentTitle;
 	private ArrayList<String> list = new ArrayList<String>();
-	
+
 	public Document(String documentTitle, ArrayList<String> list) {
 		super();
 		DocumentTitle = documentTitle;
@@ -31,17 +31,9 @@ public class Document {
 
 	public void setList(ArrayList<String> list) {
 		this.list = list;
-		for(int i = 0 ; i < list.size(); i++){
-			System.out.println("blahha :" + list.get(i).toString());
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println("Line :"+ i +" Is -->" + list.get(i).toString()+ "\n");
 		}
 	}
-	
 
-	
-	
-	
-	
-	
-	
-	
 }
