@@ -1,4 +1,4 @@
-package ie.gmit.sw;
+package ie.gmit.sw.Db4o;
 
 import com.db4o.*;
 import com.db4o.config.*;
@@ -10,6 +10,8 @@ import xtea_db4o.XTeaEncryptionStorage;
 
 import java.util.*;
 
+import javax.servlet.ServletException;
+
 import static java.lang.System.*;
 
 import java.io.BufferedReader;
@@ -17,12 +19,15 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.rmi.Naming;
+import java.rmi.registry.LocateRegistry;
 
 public class DocumentRunner {
 	private ObjectContainer db = null;
 	private List<Document> files = new ArrayList<Document>();
 
 	public DocumentRunner() {
+		
 		init(); // Populate the customers collection
 
 		EmbeddedConfiguration config = Db4oEmbedded.newConfiguration();
@@ -78,16 +83,19 @@ public class DocumentRunner {
 		
 		doc = Readfile.Readfile(fileName);
 		Document D1 = new Document();
+		D1.setDocumentID(1);
 		D1.setList(doc);
 		D1.setDocumentTitle(fileName);
 		
 		doc = Readfile.Readfile(fileName2);
 		Document D2 = new Document();
+		D2.setDocumentID(2);
 		D2.setList(doc);
 		D2.setDocumentTitle(fileName2);
 		
 		doc = Readfile.Readfile(fileName3);
 		Document D3 = new Document();
+		D3.setDocumentID(3);
 		D3.setList(doc);
 		D3.setDocumentTitle(fileName3);
 
@@ -96,7 +104,8 @@ public class DocumentRunner {
 		files.add(D3);
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args)throws Exception{
 		new DocumentRunner();
+		System.out.println("being called");
 	}
 }

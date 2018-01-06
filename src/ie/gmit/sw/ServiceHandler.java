@@ -14,7 +14,7 @@ public class ServiceHandler extends HttpServlet {
 
 	private String environmentalVariable = "hello john";
 	private static long jobNumber = 0;
-	private ArrayList<Object> obj = new ArrayList<Object>();
+	private ArrayList<String> txtFileIn = new ArrayList<String>();
 
 	public void init() throws ServletException {
 		ServletContext ctx = getServletContext(); // The servlet context is the
@@ -56,10 +56,10 @@ public class ServiceHandler extends HttpServlet {
 		BufferedReader br = new BufferedReader(new InputStreamReader(part.getInputStream()));
 		String line = null;
 		while ((line = br.readLine()) != null) {
-			obj.add(line);
+			txtFileIn.add(line);
 		}
 		
-		out.print(obj.toString());
+		//out.print(txtFileIn.toString());
 		out.print("</font>");
 		
 	}

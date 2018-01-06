@@ -1,16 +1,26 @@
-package ie.gmit.sw;
+package ie.gmit.sw.Db4o;
 
 import java.io.File;
 import java.util.ArrayList;
 
 public class Document {
 	private String DocumentTitle;
+	private int documentID;
 	private ArrayList<String> list = new ArrayList<String>();
 
-	public Document(String documentTitle, ArrayList<String> list) {
+	public Document(String documentTitle, int documentID, ArrayList<String> list) {
 		super();
 		DocumentTitle = documentTitle;
 		this.list = list;
+		this.documentID = documentID;
+	}
+
+	public int getDocumentID() {
+		return documentID;
+	}
+
+	public void setDocumentID(int documentID) {
+		this.documentID = documentID;
 	}
 
 	public Document() {
