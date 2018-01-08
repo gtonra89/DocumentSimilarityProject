@@ -1,4 +1,4 @@
-package ie.gmit.sw.Db4o;
+package ie.gmit.sw;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -8,11 +8,12 @@ import java.util.ArrayList;
 
 public class Readfile {
 	
-	/*
-	 * Readfile Method takes in a file name
+	/**
+	 * The ReadFile Method takes in a file name
 	 * reads the file line by line
 	 * and passes it back to the the init() method 
 	 * of the DocumentRunner class
+	 * @param ArrayList 
 	 */
 	public static ArrayList<String> Readfile(String fileName) {
 					// This will reference one line at a time

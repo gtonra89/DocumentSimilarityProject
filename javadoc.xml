@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="true" classpath="/home/garret/tomcat9/lib/servlet-api.jar:/home/garret/tomcat9/lib/jaspic-api.jar:/home/garret/tomcat9/lib/tomcat-i18n-es.jar:/home/garret/tomcat9/lib/tomcat-util.jar:/home/garret/tomcat9/lib/catalina.jar:/home/garret/tomcat9/lib/ecj-4.6.3.jar:/home/garret/tomcat9/lib/tomcat-i18n-fr.jar:/home/garret/tomcat9/lib/catalina-ant.jar:/home/garret/tomcat9/lib/jasper-el.jar:/home/garret/tomcat9/lib/tomcat-api.jar:/home/garret/tomcat9/lib/catalina-storeconfig.jar:/home/garret/tomcat9/lib/annotations-api.jar:/home/garret/tomcat9/lib/tomcat-coyote.jar:/home/garret/tomcat9/lib/tomcat-websocket.jar:/home/garret/tomcat9/lib/tomcat-jdbc.jar:/home/garret/tomcat9/lib/tomcat-dbcp.jar:/home/garret/tomcat9/lib/tomcat-util-scan.jar:/home/garret/tomcat9/lib/tomcat-jni.jar:/home/garret/tomcat9/lib/el-api.jar:/home/garret/tomcat9/lib/websocket-api.jar:/home/garret/tomcat9/lib/jsp-api.jar:/home/garret/tomcat9/lib/catalina-tribes.jar:/home/garret/tomcat9/lib/catalina-ha.jar:/home/garret/tomcat9/lib/jasper.jar:/home/garret/tomcat9/lib/tomcat-i18n-ja.jar:/home/garret/Downloads/xtea_db4o_8.0.jar:/home/garret/Downloads/db4o-8.0.249.16098-all-java5.jar" destdir="doc" doctitle="Jaccard Java Docs" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="ie.gmit.sw" source="1.8" sourcepath="src" splitindex="true" use="true" version="true">
+            <link href="file:/home/garret/workspaceJEE/jaccard1/doc/"/>
+        </javadoc>
+    </target>
+</project>

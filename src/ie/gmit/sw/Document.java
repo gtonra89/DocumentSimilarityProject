@@ -1,8 +1,15 @@
-package ie.gmit.sw.Db4o;
+package ie.gmit.sw;
 
 import java.io.File;
 import java.util.ArrayList;
 
+/**
+ * 
+ * @author garret
+ * Document class the 
+ * structure of the document 
+ * class
+ */
 public class Document {
 	private String DocumentTitle;
 	private int documentID;
